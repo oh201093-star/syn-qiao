@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080607" />
+  <title>The Oath — Syn Qiao</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+    :root { --red:#d3172d; --ink:#080607; --bone:#ece6dc; } * { box-sizing:border-box; } body { margin:0; min-width:320px; color:var(--bone); background:var(--ink); font-family:Cinzel,Georgia,serif; overflow-x:hidden; }
+    .backdrop,.backdrop:before,.backdrop:after { position:fixed; inset:0; pointer-events:none; content:''; } .backdrop { background:radial-gradient(ellipse at 70% 45%,#35070e 0%,#080607 52%,#030303 100%); overflow:hidden; } .backdrop:before { width:28vw; min-width:250px; height:130vh; inset:-14vh auto auto 9vw; border:2px solid #79101e; opacity:.47; transform:rotate(42deg); box-shadow:0 0 20px #5f0714, inset 0 0 25px #120305; clip-path:polygon(48% 0,52% 0,56% 77%,68% 80%,57% 84%,55% 100%,45% 100%,43% 84%,32% 80%,44% 77%); } .backdrop:after { background:radial-gradient(ellipse at center,transparent 29%,rgba(0,0,0,.75) 100%); }
+    main { position:relative; z-index:1; min-height:100vh; padding:28px clamp(22px,5vw,80px) 30px; display:flex; flex-direction:column; } nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding-bottom:18px; border-bottom:1px solid rgba(211,23,45,.32); } .brand { color:#fff4e7; font-size:clamp(.72rem,1.1vw,.94rem); letter-spacing:.34em; text-decoration:none; white-space:nowrap; } .brand i { color:var(--red); font-style:normal; padding-right:.5em; } .nav-links { display:flex; gap:clamp(15px,3vw,43px); } .nav-links a { color:#a69a93; text-decoration:none; font: .65rem 'DM Mono',monospace; letter-spacing:.16em; text-transform:uppercase; } .nav-links a:hover,.nav-links .active { color:var(--red); }
+    .content { width:min(900px,100%); margin:auto; padding:10vh 0 8vh; } .eyebrow { color:#d42738; font:.64rem 'DM Mono',monospace; letter-spacing:.24em; text-transform:uppercase; display:flex; align-items:center; gap:13px; } .eyebrow:before { content:''; width:42px; height:1px; background:var(--red); } h1 { margin:18px 0 42px; font-size:clamp(3.5rem,9vw,8.4rem); line-height:.84; letter-spacing:-.045em; text-transform:uppercase; } h1 span { display:block; color:transparent; -webkit-text-stroke:1px rgba(239,225,211,.8); } .lines { border-left:1px solid rgba(211,23,45,.7); padding-left:28px; max-width:560px; } .lines p { color:#c0b5ad; font:clamp(.78rem,1.3vw,.96rem)/1.95 'DM Mono',monospace; margin:0 0 20px; } .lines p:first-letter { color:var(--red); font-size:1.6em; } .next { display:inline-flex; gap:16px; margin-top:22px; padding:15px 20px; color:#fff3eb; border:1px solid #a71225; text-decoration:none; font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; transition:.25s; } .next:hover { background:var(--red); box-shadow:0 0 24px rgba(211,23,45,.5); transform:translateY(-3px); } footer { margin-top:auto; padding-top:17px; border-top:1px solid rgba(211,23,45,.25); color:#756864; font:.58rem 'DM Mono',monospace; letter-spacing:.14em; text-transform:uppercase; display:flex; justify-content:space-between; } footer span:first-child { color:#b31a2a; }
+    @media(max-width:620px){ main{padding:21px;} .nav-links a:not(.active){display:none;} .content{padding:12vh 0 8vh;} }
+  </style>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+  <main>
+    <nav><a class="brand" href="index.html"><i>✦</i>SYN QIAO</a><div class="nav-links"><a href="index.html">Home</a><a class="active" href="oath.html">The Oath</a><a href="sanctum.html">Sanctum</a></div></nav>
+    <section class="content"><div class="eyebrow">An old vow, kept in ash</div><h1>THE<span>OATH</span></h1><div class="lines"><p>When the last watchfire dimmed, the covenant was not broken. It was carried beneath the skin of the world.</p><p>No banner. No crown. Only the promise to stand when the dark has learned every other name.</p></div><a class="next" href="sanctum.html">Continue to sanctum <b>→</b></a></section>
+    <footer><span>✦ The iron covenant</span><span>Syn Qiao / II</span></footer>
+  </main>
+</body>
+</html>
