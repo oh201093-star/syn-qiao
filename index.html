@@ -39,12 +39,15 @@
     h1 span { display: block; color: transparent; -webkit-text-stroke: 1px rgba(239, 225, 211, .8); }
     h1::after { content: ''; position: absolute; width: min(50vw, 420px); height: 3px; left: 4px; bottom: -24px; background: linear-gradient(90deg, var(--red), transparent); box-shadow: 0 0 12px var(--red); }
     .intro { max-width: 410px; margin: 48px 0 31px; color: #bcb1a8; font-family: 'DM Mono', monospace; font-size: clamp(.75rem, 1.2vw, .9rem); line-height: 1.85; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; }
     .enter { position: relative; display: inline-flex; align-items: center; gap: 18px; padding: 16px 23px; border: 1px solid rgba(226, 36, 55, .8); color: #fff3eb; background: rgba(80, 4, 13, .22); cursor: pointer; text-decoration: none; font-size: .72rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; overflow: hidden; transition: color .25s, transform .25s, box-shadow .25s; }
     .enter::before { content: ''; position: absolute; inset: 0; background: var(--red); transform: translateX(-101%); transition: transform .3s ease; z-index: -1; }
     .enter:hover { transform: translateY(-3px); box-shadow: 0 0 27px rgba(216, 20, 42, .42); }
     .enter:hover::before { transform: translateX(0); }
     .enter b { color: var(--red); font-size: 1.1rem; font-weight: 400; transition: color .25s; }
     .enter:hover b { color: #fff; }
+    .enter.game-link { border-color: rgba(236, 230, 220, .36); background: rgba(8, 6, 7, .62); }
+    .enter.game-link::before { background: #750b19; }
 
     .footer { display: flex; justify-content: space-between; align-items: end; gap: 18px; border-top: 1px solid rgba(211, 23, 45, .25); padding-top: 17px; font-family: 'DM Mono', monospace; font-size: .58rem; letter-spacing: .14em; color: #756864; text-transform: uppercase; }
     .seal { display: flex; align-items: center; gap: 8px; color: #b31a2a; }
@@ -120,7 +123,10 @@
       <div class="eyebrow">Keepers of the last flame</div>
       <h1>Syn<span>Qiao</span></h1>
       <p class="intro">Beyond the dying embers, steel waits in silence. Step through the threshold and let the night remember your name.</p>
-      <a class="enter" href="oath.html" id="enter"><span>Enter the vault</span><b>→</b></a>
+      <div class="hero-actions">
+        <a class="enter" href="oath.html" id="enter"><span>Enter the vault</span><b>→</b></a>
+        <a class="enter game-link" href="https://emberfall-knights-oath.vercel.app" target="_blank" rel="noopener noreferrer"><span>Play Emberfall</span><b>↗</b></a>
+      </div>
     </section>
 
     <footer class="footer">
